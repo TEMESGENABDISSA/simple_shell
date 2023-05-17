@@ -1,4 +1,4 @@
-# simple_shell This project is done 
+# simple_shell 
 # TEMESGEN ABDISSA AND AMANUEL DESALEGN
 
 Project Descriptio:
