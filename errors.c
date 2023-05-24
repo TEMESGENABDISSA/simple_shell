@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- *_eputs - prints an input string
- * @str: the string to be printed
- *
- * Return: Nothing
+ *_eputs - display an input str
+ * @str: A str to  print
+ * author: temesgen abdissa and amanuel dessalegn
+ * Return:  returns nothing 0
  */
 void _eputs(char *str)
 {
@@ -20,11 +20,11 @@ void _eputs(char *str)
 }
 
 /**
- * _eputchar - writes the character c to stderr
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * _eputchar - draw a char c for  stderr
+ * @c: character to display
+ * Author:temesgen abdissa and amanuel dessalegn
+ * Return:  1 to indicate sucess
+ *  -1 is toindicate error,and  errno is set appropriately.
  */
 int _eputchar(char c)
 {
@@ -42,12 +42,12 @@ int _eputchar(char c)
 }
 
 /**
- * _putfd - writes the character c to given fd
- * @c: The character to print
- * @fd: The filedescriptor to write to
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * _putfd - draw  char c for a given fd
+ * @c:  char to display
+ * @fd:  filedescriptor to draw
+ * author: temesgenabdissa and amanuel dessalegn
+ * Return:  1. to indicate success
+ * -1 is toindicate error,and  errno is set appropriately.
  */
 int _putfd(char c, int fd)
 {
@@ -63,13 +63,12 @@ int _putfd(char c, int fd)
 		buf[i++] = c;
 	return (1);
 }
-
 /**
- *_putsfd - prints an input string
- * @str: the string to be printed
+ *_putsfd - print to  input str
+ * @str:  str to displayed
  * @fd: the filedescriptor to write to
- *
- * Return: the number of chars put
+ * author: temesgen abdissa and amanuel dessalegn
+ * Return:  num of char to put
  */
 int _putsfd(char *str, int fd)
 {
