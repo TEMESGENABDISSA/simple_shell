@@ -1,11 +1,12 @@
 #include "shell.h"
 
 /**
- * _myexit - exits the shell
- * @info: Structure containing potential arguments. Used to maintain
- *          constant function prototype.
- *  Return: exits with a given exit status
- *         (0) if info.argv[0] != "exit"
+ * _myexit - quit for shell
+ * @info: Str contained  potential arguments. helped to maintain
+ *          prototype.
+ *  Return:quit  within the  given qiut stat
+ *         (0) if info.argv[0] != "quit"
+ *         AUTHOR : temesgen abdissa and amanuel desalegn
  */
 int _myexit(info_t *info)
 {
@@ -30,10 +31,11 @@ int _myexit(info_t *info)
 }
 
 /**
- * _mycd - changes the current directory of the process
- * @info: Structure containing potential arguments. Used to maintain
- *          constant function prototype.
- *  Return: Always 0
+ * _mycd - convertes a  current directories  of the progress
+ * @info: Str contained potential arguments. needs  to maintain
+ *           prototype.
+ *  Return: Always  returns nothing 0
+ *  Author : temesgen abdissa and amauel desalegn
  */
 int _mycd(info_t *info)
 {
@@ -80,10 +82,11 @@ int _mycd(info_t *info)
 }
 
 /**
- * _myhelp - changes the current directory of the process
- * @info: Structure containing potential arguments. Used to maintain
- *          constant function prototype.
- *  Return: Always 0
+ * _myhelp - converted a current directories of the progress
+ * @info: Stru contains potential arguments. needed to maintain
+ *          prototype.
+ *  Return: Always return nothing 0
+ *  author : temesgen abdissa amanuel desalegn
  */
 int _myhelp(info_t *info)
 {
