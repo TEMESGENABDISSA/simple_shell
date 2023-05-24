@@ -1,10 +1,11 @@
 #include "shell.h"
 
 /**
- * _erratoi - converts a string to an integer
- * @s: the string to be converted
- * Return: 0 if no numbers in string, converted number otherwise
- *       -1 on error
+ * _erratoi - changes a string to int
+ * @s: the string to  changed
+ * Return: 0 if no numbers in str,changed num otherwise
+ *       return -1 to indicate  error
+ *       author: temesgen abdisssa and amanuel desslegn
  */
 int _erratoi(char *s)
 {
@@ -29,11 +30,12 @@ int _erratoi(char *s)
 }
 
 /**
- * print_error - prints an error message
- * @info: the parameter & return info struct
- * @estr: string containing specified error type
- * Return: 0 if no numbers in string, converted number otherwise
- *        -1 on error
+ * print_error - displays error message
+ * @info:  parameter and return info structure
+ * * @estr: string containing specified error type
+ * Return: 0 if no numb in str, changed num otherwise
+ *        returns  -1 to indicate  error
+ *        author : temesgen abdissa and amanuel dessalegn
  */
 void print_error(info_t *info, char *estr)
 {
@@ -47,11 +49,11 @@ void print_error(info_t *info, char *estr)
 }
 
 /**
- * print_d - function prints a decimal (integer) number (base 10)
- * @input: the input
- * @fd: the filedescriptor to write to
- *
- * Return: number of characters printed
+ * print_d - funct displays decimal int numb (base 10)
+ * @input: input
+ * @fd:  filedescriptor to draw
+ * author: amanuel dessalegn and temesgen abdissa
+ * Return: numb of char displayed
  */
 int print_d(int input, int fd)
 {
@@ -86,12 +88,12 @@ int print_d(int input, int fd)
 }
 
 /**
- * convert_number - converter function, a clone of itoa
- * @num: number
+ * convert_number - change funct  a  itoa of clone
+ * @num: numb
  * @base: base
- * @flags: argument flags
- *
- * Return: string
+ * @flags: arg flags
+ * author: temesgen and amanuel
+ * Return: str
  */
 char *convert_number(long int num, int base, int flags)
 {
@@ -122,10 +124,10 @@ char *convert_number(long int num, int base, int flags)
 }
 
 /**
- * remove_comments - function replaces first instance of '#' with '\0'
- * @buf: address of the string to modify
- *
- * Return: Always 0;
+ * remove_comments - funct replaces the  first instance of the  '#' with '\0'
+ * @buf: addr of the str  changed
+ * Author : temesgen abdissa and amanuel dessalegn
+ * Return: Always return nothing  0;
  */
 void remove_comments(char *buf)
 {
