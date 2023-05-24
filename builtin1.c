@@ -1,11 +1,12 @@
 #include "shell.h"
 
 /**
- * _myhistory - displays the history list, one command by line, preceded
- *              with line numbers, starting at 0.
- * @info: Structure containing potential arguments. Used to maintain
- *        constant function prototype.
- *  Return: Always 0
+ * _myhistory - plays the history list and  command in  line, preceded
+ *  with line num, starts to the  0.
+ * @info: Stru contains the  potential arguments. needed  to  maintain
+ * the function prototype.
+ *  Return: Always returns nothing  0
+ *  author : temesgen abdissa and amanuel desalegn
  */
 int _myhistory(info_t *info)
 {
@@ -14,10 +15,10 @@ int _myhistory(info_t *info)
 }
 
 /**
- * unset_alias - sets alias to string
- * @info: parameter struct
- * @str: the string alias
- *
+ * unset_alias - adjust aliasfor the  string
+ * @info:structure parameters
+ * @str: the str of the  alias
+ * author : temesgen abdissa and amanuel desalegn
  * Return: Always 0 on success, 1 on error
  */
 int unset_alias(info_t *info, char *str)
@@ -37,10 +38,10 @@ int unset_alias(info_t *info, char *str)
 }
 
 /**
- * set_alias - sets alias to string
- * @info: parameter struct
- * @str: the string alias
- *
+ * set_alias -adjust alia for the str
+ * @info:struct  of the param
+ * @str:str for the lias
+ * author : temesgen abdissa and amanuel desalegn 
  * Return: Always 0 on success, 1 on error
  */
 int set_alias(info_t *info, char *str)
@@ -58,9 +59,9 @@ int set_alias(info_t *info, char *str)
 }
 
 /**
- * print_alias - prints an alias string
- * @node: the alias node
- *
+ * print_alias - output  alias for the  str
+ * @node: node fot the alias
+ * author : temesgen abidissa and amanuel desalegn
  * Return: Always 0 on success, 1 on error
  */
 int print_alias(list_t *node)
@@ -81,10 +82,11 @@ int print_alias(list_t *node)
 }
 
 /**
- * _myalias - mimics the alias builtin (man alias)
- * @info: Structure containing potential arguments. Used to maintain
- *          constant function prototype.
- *  Return: Always 0
+ * _myalias -  the minic alias builtin  the man alia
+ * @info: the  Stru contained potential arguments. help to maintain
+ * the function prototype.
+ *  Return: Always  returns nothing 0
+ *  author: temesgen abdissa and amanuel dessalegn 
  */
 int _myalias(info_t *info)
 {
