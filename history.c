@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * get_history_file - gets the history file
- * @info: parameter struct
- *
- * Return: allocated string containg history file
+ * get_history_file - get histories of the  file
+ * @info: parameter of the  struct
+ * author : temesgen and amanuel
+ * Return: allocate str having the  histories file
  */
 
 char *get_history_file(info_t *info)
@@ -25,10 +25,10 @@ char *get_history_file(info_t *info)
 }
 
 /**
- * write_history - creates a file, or appends to an existing file
- * @info: the parameter struct
- *
- * Return: 1 on success, else -1
+ * write_history - create  file and  append to existing file
+ * @info: parameter of the  structure
+ * author: temesgen abdissa and amanuel dessalegn
+ * Return: returns 1  to indicate  success or -1 indicate failure
  */
 int write_history(info_t *info)
 {
@@ -54,10 +54,10 @@ int write_history(info_t *info)
 }
 
 /**
- * read_history - reads history from file
- * @info: the parameter struct
- *
- * Return: histcount on success, 0 otherwise
+ * read_history - under histories of  file
+ * @info: parameterof the  struct
+ * author:temesgen and amanuel
+ * Return: histcountto show success, 0 else
  */
 int read_history(info_t *info)
 {
@@ -103,12 +103,12 @@ int read_history(info_t *info)
 }
 
 /**
- * build_history_list - adds entry to a history linked list
- * @info: Structure containing potential arguments. Used to maintain
+ * build_history_list - update entr  histories linklist
+ * @info: Struc having  potential arguments and helps to maintain
  * @buf: buffer
- * @linecount: the history linecount, histcount
- *
- * Return: Always 0
+ * @linecount:  histories linecountandhistcount
+ * author : temesgen abdissa and amanuel dessalegn
+ * Return: Always returns nothing 0
  */
 int build_history_list(info_t *info, char *buf, int linecount)
 {
@@ -124,10 +124,10 @@ int build_history_list(info_t *info, char *buf, int linecount)
 }
 
 /**
- * renumber_history - renumbers the history linked list after changes
- * @info: Structure containing potential arguments. Used to maintain
- *
- * Return: the new histcount
+ * renumber_history - renumber of the histories linklist changes
+ * @info: Struct having  potential arguments. Useto maintain
+ * author:temesgen abdissa and Amanuel dessalegn
+ * Return:  newof the  histcoun
  */
 int renumber_history(info_t *info)
 {
