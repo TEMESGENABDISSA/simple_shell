@@ -1,12 +1,12 @@
 #include "shell.h"
 
 /**
- * add_node - adds a node to the start of the list
- * @head: address of pointer to head node
- * @str: str field of node
- * @num: node index used by history
- *
- * Return: size of list
+ * add_node - plusnode to startlist
+ * @head: address of the  pointerto headNode
+ * @str: strings fieldnode
+ * @num: nodeof the  index use in histry
+ * author: temesgen abdissa and amanuel dessalegn
+ * Return: sizelist
  */
 list_t *add_node(list_t **head, const char *str, int num)
 {
@@ -34,12 +34,12 @@ list_t *add_node(list_t **head, const char *str, int num)
 }
 
 /**
- * add_node_end - adds a node to the end of the list
- * @head: address of pointer to head node
- * @str: str field of node
- * @num: node index used by history
- *
- * Return: size of list
+ * add_node - plusnode to startlist
+ * @head: address of the  pointerto headNode
+ * @str: strings fieldnode
+ * @num: nodeof the  index use in histry
+ * author: temesgen abdissa and amanuel dessalegn
+ * Return: sizelist
  */
 list_t *add_node_end(list_t **head, const char *str, int num)
 {
@@ -75,10 +75,10 @@ list_t *add_node_end(list_t **head, const char *str, int num)
 }
 
 /**
- * print_list_str - prints only the str element of a list_t linked list
- * @h: pointer to first node
- *
- * Return: size of list
+ * print_list_str - displays  the str element of list_tLinkedlist
+ * @h: point of the firstNode
+ * Author:temesgen abdissa and amanuel dessalegn
+ * Return: sizelist
  */
 size_t print_list_str(const list_t *h)
 {
@@ -95,11 +95,11 @@ size_t print_list_str(const list_t *h)
 }
 
 /**
- * delete_node_at_index - deletes node at given index
- * @head: address of pointer to first node
- * @index: index of node to delete
- *
- * Return: 1 on success, 0 on failure
+ * delete_node_at_index - removenode at a point index
+ * @head: address of point to firstNode
+ * @index: index of node to remove
+ * author:temesgen abdissa and amanuel dessalegn
+ * Return:returns  1 shows success, 0 else failure
  */
 int delete_node_at_index(list_t **head, unsigned int index)
 {
@@ -135,10 +135,10 @@ int delete_node_at_index(list_t **head, unsigned int index)
 }
 
 /**
- * free_list - frees all nodes of a list
- * @head_ptr: address of pointer to head node
- *
- * Return: void
+ * free_list - free nodes of the list
+ * @head_ptr: address of the  point to the  headNode
+ * author: temesgen abdissa and amanuel dessalegn
+ * Return: void or nothing
  */
 void free_list(list_t **head_ptr)
 {
