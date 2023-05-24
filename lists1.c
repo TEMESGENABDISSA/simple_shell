@@ -1,10 +1,10 @@
 #include "shell.h"
 
 /**
- * list_len - determines length of linked list
- * @h: pointer to first node
- *
- * Return: size of list
+ * list_len - find the length to linkedList
+ * @h: point to firstNode
+ * author: temesgen abdissa and amanuel dessalegn
+ * Return: listsize
  */
 size_t list_len(const list_t *h)
 {
@@ -19,10 +19,10 @@ size_t list_len(const list_t *h)
 }
 
 /**
- * list_to_strings - returns an array of strings of the list->str
- * @head: pointer to first node
- *
- * Return: array of strings
+ * list_to_strings - displays an array  str of  list->str
+ * @head: point to firstNode
+ * author: temesgen abdissa and amanuel dessalegn
+ * Return: str of arrays
  */
 char **list_to_strings(list_t *head)
 {
@@ -56,10 +56,10 @@ char **list_to_strings(list_t *head)
 
 
 /**
- * print_list - prints all elements of a list_t linked list
- * @h: pointer to first node
- *
- * Return: size of list
+ * print_list - displays elem of list_t linkedList
+ * @h: point firstNode
+ * author:temesgen abdissa and amanuel dessalegn
+ * Return: list of size
  */
 size_t print_list(const list_t *h)
 {
@@ -79,11 +79,11 @@ size_t print_list(const list_t *h)
 }
 
 /**
- * node_starts_with - returns node whose string starts with prefix
- * @node: pointer to list head
- * @prefix: string to match
- * @c: the next character after prefix to match
- *
+ * node_starts_with - Displays nodestring starts within prefix
+ * @node: pointto listHead
+ * @prefix: str for match
+ * @c:  next char after prefixfor match
+ * Author:temesgenabdissa and amanuel dessalegn
  * Return: match node or null
  */
 list_t *node_starts_with(list_t *node, char *prefix, char c)
@@ -101,11 +101,11 @@ list_t *node_starts_with(list_t *node, char *prefix, char c)
 }
 
 /**
- * get_node_index - gets the index of a node
- * @head: pointer to list head
- * @node: pointer to the node
- *
- * Return: index of node or -1
+ * get_node_index - get the index node
+ * @head: point to listHead
+ * @node: point the  node
+ * author: temesgen abdissa and amanuel dessalegn
+ * Return: index node or -1
  */
 ssize_t get_node_index(list_t *head, list_t *node)
 {
