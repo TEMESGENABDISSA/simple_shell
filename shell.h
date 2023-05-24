@@ -74,23 +74,25 @@ typedef struct liststr
  */
 typedef struct passinfo
 {
-        char *path;
 	char *arg;
-        int argc;
 	char **argv;
-	int err_num;
+	char *path;
+	int argc;
 	unsigned int line_count;
-        char *fname;
+	int err_num;
 	int linecount_flag;
+	char *fname;
+	list_t *env;
 	list_t *history;
 	list_t *alias;
-	list_t *env;
 	char **environ;
-	int status;
 	int env_changed;
-        char **cmd_buf; /* pointer to cmd ; chain buffer, for memory mangement */
-	int histcount;
+	int status;
+
+	char **cmd_buf; /* pointer to cmd ; chain buffer, for memory mangement */
+	int cmd_buf_type; /* CMD_type ||, &&, ; */
 	int readfd;
+	int histcount;
 } info_t;
 
 #define INFO_INIT \
@@ -152,9 +154,9 @@ char **strtow2(char *, char);
 char **strtow(char *, char *);
 
 /* atoi.c */
-int interactive(info_t *)
-int _isalpha(int);
+int interactive(info_t *);
 int is_delim(char, char *);
+int _isalpha(int);
 int _atoi(char *);
 
 /* realloc.c */
