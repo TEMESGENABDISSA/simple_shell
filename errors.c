@@ -1,90 +1,85 @@
 #include "shell.h"
+
 /**
- * Prints the specified string to standard error.
+ *_eputs -  Prints the specified string to standard error.
+ * @str: The string(str) to be printed.
  *
- * @param str The string to be printed.
- *
- * @return None.
+ * Return: None
  */
 void _eputs(char *str)
 {
-    int i = 0;
+	int A = 0;
 
-    if (!str) {
-        return;
-    }
-
-    while (str[i] != '\0') {
-        _eputchar(str[i]);
-        i++;
-    }
+	if (!str)
+		return;
+	while (str[A] != '\0')
+	{
+		_eputchar(str[A]);
+		A++;
+	}
 }
+
 /**
- * Writes the specified character to standard error.
+ * _eputchar - Writes the specified character to standard error.
+ * @c: The c character to be writte
  *
- * @param c The character to be written.
- *
- * @return On success, returns 1. On error, returns -1 and sets errno appropriately.
+ * Return: On success, returns 1. 
+ * On error, returns -1 and sets errno appropriately.
  */
 int _eputchar(char c)
 {
-    static int i;
-    static char buf[WRITE_BUF_SIZE];
+	static int A;
+	static char buf[WRITE_BUF_SIZE];
 
-    if (c == BUF_FLUSH || i >= WRITE_BUF_SIZE) {
-        write(STDERR_FILENO, buf, i);
-        i = 0;
-    }
-
-    if (c != BUF_FLUSH) {
-        buf[i++] = c;
-    }
-
-    return 1;
+	if (c == BUF_FLUSH || A >= WRITE_BUF_SIZE)
+	{
+		write(2, buf, A);
+		A = 0;
+	}
+	if (c != BUF_FLUSH)
+		buf[A++] = c;
+	return (1);
 }
+
 /**
- * Writes the specified character to the specified file descriptor.
+ * _putfd - Writes character to the specified file descriptor.
+ * @c: The character to be written.
+ * @fd: The filedescriptor to write to
  *
- * @param c The character to be written.
- * @param fd The file descriptor to write to.
- *
- * @return On success, returns 1. On error, returns -1 and sets errno appropriately.
+ * Return: On success, returns 1. 
+ * On error, returns -1 and sets errno appropriately..
  */
 int _putfd(char c, int fd)
 {
-    static int i;
-    static char buf[WRITE_BUF_SIZE];
+	static int A;
+	static char buf[WRITE_BUF_SIZE];
 
-    if (c == BUF_FLUSH || i >= WRITE_BUF_SIZE) {
-        write(fd, buf, i);
-        i = 0;
-    }
-
-    if (c != BUF_FLUSH) {
-        buf[i++] = c;
-    }
-
-    return 1;
+	if (c == BUF_FLUSH || A >= WRITE_BUF_SIZE)
+	{
+		write(fd, buf, A);
+		A = 0;
+	}
+	if (c != BUF_FLUSH)
+		buf[A++] = c;
+	return (1);
 }
+
 /**
- * Writes the specified string to the specified file descriptor.
+ *_putsfd - Writes str  to the specified file descriptor.
+ * @str: the string(STR) to be printed
+ * @fd: the filedescriptor to write to
  *
- * @param str The string to be printed.
- * @param fd The file descriptor to write to.
- *
- * @return The number of characters written.
+ * Return: The number of characters written.
  */
 int _putsfd(char *str, int fd)
 {
-    int i = 0;
+	int A = 0;
 
-    if (!str) {
-        return 0;
-    }
-
-    while (*str) {
-        i += _putfd(*str++, fd);
-    }
-
-    return i;
+	if (!str)
+		return (0);
+	while (*str)
+	{
+		A += _putfd(*str++, fd);
+	}
+	return (A);
 }
