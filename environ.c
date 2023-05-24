@@ -1,10 +1,11 @@
 #include "shell.h"
 
 /**
- * _myenv - prints the current environment
- * @info: Structure containing potential arguments. Used to maintain
- *          constant function prototype.
- * Return: Always 0
+ * _myenv - displays the current environment variable
+ * @info: Strut contained the  potential arguments and helps to maintain
+ *           the constant prototype.
+ * Return: Always  returns nothing 0
+ * Author : temesgen abdissa and amanuel desalegn
  */
 int _myenv(info_t *info)
 {
@@ -13,11 +14,11 @@ int _myenv(info_t *info)
 }
 
 /**
- * _getenv - gets the value of an environ variable
- * @info: Structure containing potential arguments. Used to maintain
- * @name: env var name
- *
- * Return: the value
+ * _getenv - setts the value of environment  variable
+ * @info: Struct contained the  potential of  arguments. helps to maintain
+ * @name: envromental variable name
+ * author : temesgen and amanuel
+ * Return: values of the variable
  */
 char *_getenv(info_t *info, const char *name)
 {
@@ -35,11 +36,12 @@ char *_getenv(info_t *info, const char *name)
 }
 
 /**
- * _mysetenv - Initialize a new environment variable,
+ * _mysetenv - Initial  a new envi variable,
  *             or modify an existing one
- * @info: Structure containing potential arguments. Used to maintain
- *        constant function prototype.
- *  Return: Always 0
+ * @info: Structure having  potential arguments.helps to maintain
+ *        cons  for the  function prototype.
+ *  Return: Always returns nothing  0
+ *  author : temesgen abdissa and amanuel desalegn
  */
 int _mysetenv(info_t *info)
 {
@@ -54,10 +56,11 @@ int _mysetenv(info_t *info)
 }
 
 /**
- * _myunsetenv - Remove an environment variable
- * @info: Structure containing potential arguments. Used to maintain
- *        constant function prototype.
- *  Return: Always 0
+ * _myunsetenv -delete  env variables
+ * @info: Stru contain  potential argum and  Used to maintain
+ *         prototype.
+ *  Return: Always returns nothing zero  0
+ *  author: amanuel dessalegn
  */
 int _myunsetenv(info_t *info)
 {
@@ -75,10 +78,11 @@ int _myunsetenv(info_t *info)
 }
 
 /**
- * populate_env_list - populates env linked list
- * @info: Structure containing potential arguments. Used to maintain
- *          constant function prototype.
- * Return: Always 0
+ * populate_env_list - assign  env linked list
+ * @info: Struc having potential argum and helps to maintain
+ *          constant the  function of the  prototype.
+ * Return: Always returns nothing zero  0
+ * author : amanuel dessalegn and temesgen abdissa
  */
 int populate_env_list(info_t *info)
 {
