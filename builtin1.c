@@ -38,11 +38,11 @@ int unset_alias(info_t *info, char *str)
 }
 
 /**
- * set_alias -adjust alia for the str
- * @info:struct  of the param
- * @str:str for the lias
- * author : temesgen abdissa and amanuel desalegn 
- * Return: Always 0 on success, 1 on error
+ * set_alias - set  alia  to the  str
+ * @info: param of the  struct
+ * @str:  string for the  alias
+ * author: temesgen abdissa and amanuel dassalegn
+ * Return: Always 0  success, 1 on error
  */
 int set_alias(info_t *info, char *str)
 {
@@ -82,11 +82,10 @@ int print_alias(list_t *node)
 }
 
 /**
- * _myalias -  the minic alias builtin  the man alia
- * @info: the  Stru contained potential arguments. help to maintain
- * the function prototype.
- *  Return: Always  returns nothing 0
- *  author: temesgen abdissa and amanuel dessalegn 
+ * _myalias - mimics built in main alias
+ * @info: Struc having  potential arg.helps to maintain
+ *           prototype.
+ *  Return: Always returns nothing  0
  */
 int _myalias(info_t *info)
 {
