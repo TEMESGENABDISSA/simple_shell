@@ -1,11 +1,12 @@
 #include "shell.h"
 
 /**
- **_memset - fills memory with a constant byte
- *@s: the pointer to the memory area
- *@b: the byte to fill *s with
- *@n: the amount of bytes to be filled
- *Return: (s) a pointer to the memory area s
+ **_memset - fill the  memory a constant byte
+ *@s:  point to  memory area
+ *@b:  byte to fill *s with
+ *@n:  amount of bytes to  filled
+ *Return: (s) a point to  memory area s
+ * author: temesgen abdissa and amanuel dessalegn
  */
 char *_memset(char *s, char b, unsigned int n)
 {
@@ -17,8 +18,9 @@ char *_memset(char *s, char b, unsigned int n)
 }
 
 /**
- * ffree - frees a string of strings
- * @pp: string of strings
+ * ffree - free  str of the str
+ * @pp: string of the  string
+ * author: temesgen abdissa and amanuel dessalegn
  */
 void ffree(char **pp)
 {
@@ -32,12 +34,12 @@ void ffree(char **pp)
 }
 
 /**
- * _realloc - reallocates a block of memory
- * @ptr: pointer to previous malloc'ated block
- * @old_size: byte size of previous block
- * @new_size: byte size of new block
- *
- * Return: pointer to da ol'block nameen.
+ * _realloc - reallocate block of the  memories
+ * @ptr: point  to previous malloc'ated bl
+ * @old_size: byte size of the  previous bl
+ * @new_size: byte size of the  new bl
+ * author : temesgen Abdissa and Amanuel dessalegn
+ * Return: point for  da ol'block nameen.
  */
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
